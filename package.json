@@ -16,7 +16,7 @@
 		"url": "git+https://github.com/t3ned-dev/lib.git"
 	},
 	"scripts": {
-		"lint": "turbo run lint",
+		"lint": "npx eslint src --ext js,ts --fix",
 		"format": "turbo run format",
 		"build": "turbo run build",
 		"test": "turbo run test"
