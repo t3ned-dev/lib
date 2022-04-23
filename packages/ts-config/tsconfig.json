@@ -1,0 +1,51 @@
+{
+	"compilerOptions": {
+		/* Language and Environment */
+		"target": "ES2020",
+		"lib": ["ES2020"],
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"useDefineForClassFields": true,
+		"incremental": true,
+		"outDir": "./dist",
+		"baseUrl": "./src",
+		"tsBuildInfoFile": "./dist/.tsbuildinfo",
+
+		/* Modules */
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"types": ["node"],
+		"resolveJsonModule": true,
+
+		/* Emit */
+		"declaration": false,
+		"declarationMap": false,
+		"sourceMap": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+
+		/* Interop Constraints */
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"importsNotUsedAsValues": "error",
+
+		/* Type Checking */
+		"strict": true,
+		"strictFunctionTypes": true,
+		"alwaysStrict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+
+		/* Completeness */
+		"skipLibCheck": true
+	},
+	"include": ["./src/**/*"]
+}
