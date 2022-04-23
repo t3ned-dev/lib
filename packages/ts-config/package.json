@@ -1,0 +1,22 @@
+{
+	"name": "@t3ned/ts-config",
+	"description": "Typescript configuration",
+	"author": "T3NED <software@t3ned.com>",
+	"main": "tsconfig.json",
+	"version": "1.0.0",
+	"files": [
+		"tsconfig.json"
+	],
+	"engines": {
+		"npm": ">=8.0.0",
+		"node": ">=16.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/t3ned-dev/lib.git",
+		"directory": "packages/ts-config"
+	},
+	"dependencies": {
+		"typescript": "^4.5.5"
+	}
+}
