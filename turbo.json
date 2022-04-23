@@ -4,6 +4,10 @@
 			"dependsOn": ["@t3ned/eslint-config#build", "@t3ned/prettier-config#build"],
 			"outputs": []
 		},
+		"format": {
+			"dependsOn": ["@t3ned/eslint-config#build", "@t3ned/prettier-config#build"],
+			"outputs": []
+		},
 		"build": {
 			"dependsOn": ["^build"],
 			"outputs": ["dist/**"]
