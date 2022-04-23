@@ -1,0 +1,21 @@
+{
+  "name": "@t3ned/lib",
+  "author": "T3NED <software@t3ned.com>",
+  "packageManager": "yarn@1.22.10",
+  "license": "Apache-2.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t3ned-dev/lib.git"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
