@@ -22,6 +22,8 @@ jobs:
                   node-version: 16
             - name: Install dependencies
               run: yarn install --immutable
+            - name: Build project
+              run: yarn build              
             - name: Run ESLint
               run: yarn lint --fix=false
 
