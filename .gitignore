@@ -20,7 +20,6 @@ dist/
 
 # testing
 coverage
-tests
 
 # misc
 .DS_Store
