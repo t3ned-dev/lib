@@ -1,30 +1,30 @@
 {
-  "name": "@t3ned/lib",
-  "author": "T3NED <software@t3ned.com>",
-  "packageManager": "yarn@1.22.10",
-  "license": "Apache-2.0",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "engines": {
-    "npm": ">=8.0.0",
-    "node": ">=16.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/t3ned-dev/lib.git"
-  },
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^17.0.25",
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "@typescript-eslint/parser": "^5.20.0",
-    "eslint": "^8.14.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2",
-    "typescript": "^4.6.3"
-  }
+	"name": "@t3ned/lib",
+	"author": "T3NED <software@t3ned.com>",
+	"packageManager": "yarn@1.22.10",
+	"license": "Apache-2.0",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"engines": {
+		"npm": ">=8.0.0",
+		"node": ">=16.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/t3ned-dev/lib.git"
+	},
+	"scripts": {},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^17.0.25",
+		"@typescript-eslint/eslint-plugin": "^5.20.0",
+		"@typescript-eslint/parser": "^5.20.0",
+		"eslint": "^8.14.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"prettier": "^2.6.2",
+		"typescript": "^4.6.3"
+	}
 }
