@@ -6,7 +6,7 @@
 		"declarationMap": true,
 		"declarationDir": "./dist/types",
 		"tsBuildInfoFile": "./dist/.tsbuildinfo",
-        "types": ["jest"]
+        "types": ["node", "jest"]
 	},
 	"include": ["src", "tests"]
 }
