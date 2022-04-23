@@ -1,0 +1,36 @@
+{
+	"name": "@t3ned/eslint-config",
+	"description": "ESLint configuration",
+	"author": "T3NED <software@t3ned.com>",
+	"main": "dist/index.js",
+	"version": "1.0.0",
+	"files": [
+		"dist",
+		"!dist/*.tsbuildinfo"
+	],
+	"engines": {
+		"npm": ">=8.0.0",
+		"node": ">=16.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/t3ned-dev/lib.git",
+		"directory": "packages/eslint-config"
+	},
+	"scripts": {
+		"build": "npx tsc -b .",
+		"lint": "npx eslint src --ext js,ts --fix"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.20.0",
+		"@typescript-eslint/parser": "^5.20.0",
+		"eslint": "^8.14.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"prettier": "^2.6.2",
+		"typescript": "^4.6.3"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.25"
+	}
+}
