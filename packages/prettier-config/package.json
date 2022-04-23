@@ -18,8 +18,9 @@
 		"directory": "packages/prettier-config"
 	},
 	"scripts": {
-		"build": "npx tsc -b .",
-		"lint": "npx eslint src --ext js,ts --fix"
+		"lint": "npx eslint src --ext js,ts --fix",
+		"format": "npx prettier --write src",
+		"build": "npx tsc -b ."
 	},
 	"dependencies": {
 		"prettier": "^2.6.2"
