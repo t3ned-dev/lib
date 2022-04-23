@@ -3,6 +3,7 @@
 	"include": [
 		"packages/**/*.ts", 
 		"packages/**/*.js", 
-		"scripts/**/*.js"
+		"scripts/**/*.js",
+		"jest.config.js"
 	]
 }
