@@ -6,6 +6,11 @@ export const eslintConfig = {
 		sourceType: "module",
 		project: "./tsconfig.eslint.json",
 	},
+	env: {
+		node: true,
+		es2020: true,
+		jest: true,
+	},
 	extends: ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
 	rules: {
 		quotes: ["error", "double"],
