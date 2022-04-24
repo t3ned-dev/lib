@@ -1,4 +1,4 @@
-import { Token } from "../src";
+import { Token } from "..";
 
 describe("Token", () => {
 	describe("Token#generate", () => {
