@@ -4,7 +4,7 @@
 	"author": "T3NED <software@t3ned.com>",
 	"main": "dist/src/index.js",
 	"version": "1.0.0",
-	"types": "dist/types",
+	"types": "dist/types/src",
 	"files": [
 		"dist",
 		"!dist/.tsbuildinfo"
