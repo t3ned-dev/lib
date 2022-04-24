@@ -2,11 +2,12 @@
 	"name": "@t3ned/snowflake",
 	"description": "A snowflake id generator and deconstructor",
 	"author": "T3NED <software@t3ned.com>",
-	"main": "dist/src/index.js",
 	"version": "1.0.0",
-	"types": "dist/types/src",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"files": [
 		"dist",
+		"!dist/__tests__",
 		"!dist/.tsbuildinfo"
 	],
 	"engines": {
