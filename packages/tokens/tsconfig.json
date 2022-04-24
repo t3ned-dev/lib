@@ -1,0 +1,12 @@
+{
+	"extends": "../ts-config/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./dist",
+		"declaration": true,
+		"declarationMap": true,
+		"declarationDir": "./dist/types",
+		"tsBuildInfoFile": "./dist/.tsbuildinfo",
+        "types": ["node", "jest"]
+	},
+	"include": ["src", "tests"]
+}
