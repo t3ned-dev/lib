@@ -1,4 +1,4 @@
-import { Encryption } from "../src";
+import { Encryption } from "..";
 
 const key = "47025a577a372c610a773feebccc2e0f";
 const encryption = new Encryption(key);

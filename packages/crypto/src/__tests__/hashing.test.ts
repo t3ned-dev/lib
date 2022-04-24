@@ -1,4 +1,4 @@
-import { sha1, sha256, sha384, sha512 } from "../src";
+import { sha1, sha256, sha384, sha512 } from "..";
 
 describe("Hashing", () => {
 	describe("sha1", () => {
