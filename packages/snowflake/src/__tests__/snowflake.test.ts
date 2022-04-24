@@ -1,4 +1,4 @@
-import { Snowflake, constants } from "../src";
+import { Snowflake, constants } from "..";
 
 describe("Snowflake", () => {
 	describe("Snowflake#generate", () => {
