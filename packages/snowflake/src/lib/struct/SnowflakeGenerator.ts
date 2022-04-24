@@ -1,5 +1,5 @@
 export class SnowflakeGenerator {
-	#epoch: bigint;
+	readonly #epoch: bigint;
 	#increment = 0n;
 
 	public constructor(epoch: bigint) {
@@ -19,16 +19,15 @@ export class SnowflakeGenerator {
 			if (this.#increment >= 4095n) this.#increment = 0n;
 		}
 
-		const snowflake =
+		return (
 			((timestamp - this.#epoch) << 22n) |
 			((workerId & 0b11111n) << 17n) |
 			((processId & 0b11111n) << 12n) |
-			increment;
-
-		return snowflake;
+			increment
+		);
 	}
 
-	public deconstruct(snowflake: snowflake) {
+	public deconstruct(snowflake: snowflake): DeconstructedSnowflake {
 		return {
 			timestamp: (snowflake >> 22n) + this.#epoch,
 			workerId: (snowflake >> 17n) & 0b11111n,
