@@ -2,9 +2,9 @@
 	"name": "@t3ned/crypto",
 	"description": "Cryptography functions for hashing and encrypting data",
 	"author": "T3NED <software@t3ned.com>",
-	"main": "dist/src/index.js",
 	"version": "1.0.0",
-	"types": "dist/types/src",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"files": [
 		"dist",
 		"!dist/.tsbuildinfo"
