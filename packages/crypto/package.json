@@ -7,6 +7,7 @@
 	"types": "dist/index.d.ts",
 	"files": [
 		"dist",
+		"!dist/__tests__",
 		"!dist/.tsbuildinfo"
 	],
 	"engines": {
