@@ -2,30 +2,23 @@ import { Snowflake, constants } from "../src";
 
 describe("Snowflake", () => {
 	describe("Snowflake#generate", () => {
-		test("given snowflake timestamp option equal to snowflake epoch returns 4096", () => {
-			const expectedId = "4096";
-			const timestamp = constants.SNOWFLAKE_EPOCH;
-			const snowflake = Snowflake.generate({ timestamp });
+		test("given timestamp returns snowflake", () => {
+			const expectedId = "32614907904004096";
+			const sampleTimestamp = 1648771200000n;
+			const snowflake = Snowflake.generate({ timestamp: sampleTimestamp });
 
 			expect(snowflake.toString()).toBe(expectedId);
 		});
 
-		test("given no snowflake options returns a snowflake larger than 4096", () => {
-			const expectedId = 4096n;
-			const snowflake = Snowflake.generate();
-
-			expect(snowflake).toBeGreaterThan(expectedId);
-		});
-
-		test("given increment option higher than 4095 returns a snowflake with default options", () => {
-			const expectedId = "4096";
-			const timestamp = constants.SNOWFLAKE_EPOCH;
-			const snowflake = Snowflake.generate({ timestamp, increment: 5000n });
+		test("given increment exceeding 4095n returns snowflake", () => {
+			const expectedId = "32614907904004096";
+			const sampleTimestamp = 1648771200000n;
+			const snowflake = Snowflake.generate({ timestamp: sampleTimestamp, increment: 5000n });
 
 			expect(snowflake.toString()).toBe(expectedId);
 		});
 
-		test("creation of many snowflakes returns unique bigint values each time", () => {
+		test("given the creation of many snowflakes returns unique values", () => {
 			const snowflakes = [
 				Snowflake.generate(),
 				Snowflake.generate(),
@@ -40,6 +33,21 @@ describe("Snowflake", () => {
 			];
 
 			expect(new Set(snowflakes).size).toBe(snowflakes.length);
+		});
+	});
+
+	describe("Snowflake#deconstruct", () => {
+		test("given snowflake returns deconstructed data", () => {
+			const id = 32614907904004096n;
+			const snowflake = Snowflake.deconstruct(id);
+
+			expect(snowflake).toStrictEqual({
+				timestamp: 1648771200000n,
+				workerId: 0n,
+				processId: 1n,
+				increment: 0n,
+				epoch: constants.SNOWFLAKE_EPOCH,
+			});
 		});
 	});
 });
